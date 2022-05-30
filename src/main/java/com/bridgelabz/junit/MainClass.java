@@ -44,6 +44,7 @@ public class MainClass {
         Boolean result = matcher3.matches();
         return result;
     }
+    //UC5
     public boolean passwordRule1(String passWord) {
         String PasswordPattern = "[a-zA-Z0-9~!@#$]{8,}";
         Pattern pattern = Pattern.compile(PasswordPattern);

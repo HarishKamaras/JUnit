@@ -45,4 +45,12 @@ public class MainClassTest {
         boolean result = obj.mobileNumber("91-9876543210");
         assertEquals("Mobile",true,result);
     }
+
+    //UC5
+    @Test
+    public void userPassWordRule1ShouldPassTheRegexValidation() {
+        MainClass obj = new MainClass();
+        boolean result = obj.passwordRule1("harish12");
+        assertEquals("passwordRule1",true,result);
+    }
 }
