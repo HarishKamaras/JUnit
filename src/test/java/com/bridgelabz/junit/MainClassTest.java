@@ -29,4 +29,13 @@ public class MainClassTest {
         boolean result = obj.lastName("Kamarasu");
         assertEquals("LName",true,result);
     }
+
+    //UC3
+    @Test
+    public void  userEmailShouldPassTheRegexValidation(){
+        MainClass obj = new MainClass();
+        boolean result = obj.email("abc+100@gmail.com");
+        assertEquals("Email",true,result);
+    }
+
 }
