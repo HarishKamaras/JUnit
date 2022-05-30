@@ -53,4 +53,11 @@ public class MainClassTest {
         boolean result = obj.passwordRule1("harish12");
         assertEquals("passwordRule1",true,result);
     }
+    //UC6
+    @Test
+    public void userPassWordRule2ShouldPassTheRegexValidation() {
+        MainClass obj = new MainClass();
+        boolean result = obj.passwordRule2("Harish12");
+        assertEquals("passwordRule1",true,result);
+    }
 }
