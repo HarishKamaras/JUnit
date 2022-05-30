@@ -38,4 +38,11 @@ public class MainClassTest {
         assertEquals("Email",true,result);
     }
 
+    //UC4
+    @Test
+    public void userMobileNumberShouldPassTheRegexValidation() {
+        MainClass obj = new MainClass();
+        boolean result = obj.mobileNumber("91-9876543210");
+        assertEquals("Mobile",true,result);
+    }
 }
