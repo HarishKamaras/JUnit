@@ -70,14 +70,13 @@ public class MainClass {
         Boolean result = matcher.matches();
         return result;
     }
-
+    //UC8
     public boolean passwordRule4(String passWord) {
         Scanner scanner = new Scanner(System.in);
-        String PasswordPattern = "^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+=])[a-zA-Z0-9@#$%^&+=]{8,}$";
+        String PasswordPattern = "^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+*])[a-zA-Z0-9@#$%^&+*]{8,}$";
         Pattern pattern = Pattern.compile(PasswordPattern);
         Matcher matcher = pattern.matcher(passWord);
         Boolean result = matcher.matches();
         return result;
     }
-
 }
