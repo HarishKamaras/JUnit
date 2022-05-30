@@ -22,10 +22,58 @@ public class MainClassTest {
         assertEquals("fName",true,result);
     }
 
-   /* @Test
+    //UC2
+    @Test
     public void userLastNameShouldPassTheRegexValidation() {
         MainClass obj = new MainClass();
         boolean result = obj.lastName("Kamarasu");
         assertEquals("LName",true,result);
-    }*/
+    }
+
+    //UC3
+    @Test
+    public void  userEmailShouldPassTheRegexValidation(){
+        MainClass obj = new MainClass();
+        boolean result = obj.email("abc+100@gmail.com");
+        assertEquals("Email",true,result);
+    }
+
+    //UC4
+    @Test
+    public void userMobileNumberShouldPassTheRegexValidation() {
+        MainClass obj = new MainClass();
+        boolean result = obj.mobileNumber("91-9876543210");
+        assertEquals("Mobile",true,result);
+    }
+
+    //UC5
+    @Test
+    public void userPassWordRule1ShouldPassTheRegexValidation() {
+        MainClass obj = new MainClass();
+        boolean result = obj.passwordRule1("harish12");
+        assertEquals("passwordRule1",true,result);
+    }
+    //UC6
+    @Test
+    public void userPassWordRule2ShouldPassTheRegexValidation() {
+        MainClass obj = new MainClass();
+        boolean result = obj.passwordRule2("Harish12");
+        assertEquals("passwordRule2",true,result);
+    }
+
+    //UC7
+    @Test
+    public void userPassWordRule3ShouldPassTheRegexValidation() {
+        MainClass obj = new MainClass();
+        boolean result = obj.passwordRule3("Harish12");
+        assertEquals("passwordRule3",true,result);
+    }
+
+    //UC8
+    @Test
+    public void userPassWordRule4ShouldPassTheRegexValidation() {
+        MainClass obj = new MainClass();
+        boolean result = obj.passwordRule4("Harish12*");
+        assertEquals("passwordRule4",true,result);
+    }
 }
