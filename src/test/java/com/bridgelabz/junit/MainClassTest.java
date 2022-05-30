@@ -22,10 +22,11 @@ public class MainClassTest {
         assertEquals("fName",true,result);
     }
 
-   /* @Test
+    //UC2
+    @Test
     public void userLastNameShouldPassTheRegexValidation() {
         MainClass obj = new MainClass();
         boolean result = obj.lastName("Kamarasu");
         assertEquals("LName",true,result);
-    }*/
+    }
 }

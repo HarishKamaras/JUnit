@@ -20,12 +20,12 @@ public class MainClass {
         boolean result = matcher.matches();
         return result;
     }
-
-  /*  public boolean lastName(String lastName) {
+//UC2
+   public boolean lastName(String lastName) {
         String lastNamePattern = "[A-Z]{1}[a-z]{2,}";
         Pattern pattern = Pattern.compile(lastNamePattern);
         Matcher matcher = pattern.matcher(lastName);
         boolean result = matcher.matches();
         return result;
-    }*/
+    }
 }
