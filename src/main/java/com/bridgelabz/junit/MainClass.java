@@ -61,6 +61,7 @@ public class MainClass {
         Boolean result = matcher.matches();
         return result;
     }
+    //UC7
     public boolean passwordRule3(String passWord) {
         Scanner scanner = new Scanner(System.in);
         String PasswordPattern = "^(?=.*[0-9])(?=.*[A-Z])[a-zA-Z0-9@#$%^&+]{8,}$";

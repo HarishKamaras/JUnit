@@ -58,6 +58,14 @@ public class MainClassTest {
     public void userPassWordRule2ShouldPassTheRegexValidation() {
         MainClass obj = new MainClass();
         boolean result = obj.passwordRule2("Harish12");
-        assertEquals("passwordRule1",true,result);
+        assertEquals("passwordRule2",true,result);
+    }
+
+    //UC7
+    @Test
+    public void userPassWordRule3ShouldPassTheRegexValidation() {
+        MainClass obj = new MainClass();
+        boolean result = obj.passwordRule3("Harish12");
+        assertEquals("passwordRule3",true,result);
     }
 }
